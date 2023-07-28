@@ -1,0 +1,12 @@
+import cv2
+import numpy as np
+img1=cv2.imread(’input.jpg’,1)
+img2=cv2.imread(’input.jpg’,0)
+sum=cv2.addWeighted(img1,0.5,img2,0.4,0)
+cv2.imshow(’Addition’,sum)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+sub=cv2.subtract(img1,img2,0)
+cv2.imshow(’Subtraction’,sub)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
